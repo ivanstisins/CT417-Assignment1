@@ -24,7 +24,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = 'com.github.ivanstisins'
-            artifactId = 'CT41-Assignment1'
+            artifactId = 'CT417-Assignment1'
             version = '1.1'
 
             from components.java
