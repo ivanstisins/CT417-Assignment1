@@ -61,10 +61,7 @@ public class Student {
     }
 
     public Course getCourse(int index) {
-        for(index =0; index< course.size(); index++) {
-            return course.get(index);
-        }
-        return null;
+        return course.get(index);
     }
 
     public void addModule(Modules module){
@@ -72,10 +69,7 @@ public class Student {
     }
 
     public Modules getModule(int index) {
-        for(index =0; index< modules.size(); index++) {
-            return modules.get(index);
-        }
-        return null;
+        return modules.get(index);
     }
 
     public ArrayList<Modules> getModules() {

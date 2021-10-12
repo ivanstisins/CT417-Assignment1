@@ -61,7 +61,7 @@ class CourseTest {
         instance.addModule(module1);
         instance.addModule(module2);
         Modules actualModule = instance.getModule(1);
-        assertEquals(actualModule, module1);
+        assertEquals(actualModule, module2);
     }
 
     @Test

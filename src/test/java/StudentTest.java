@@ -80,7 +80,7 @@ class StudentTest {
     void getCourse() {
         instance.addCourse(course1);
         instance.addCourse(course2);
-        Course actualCourse = instance.getCourse(1);
+        Course actualCourse = instance.getCourse(0);
         assertEquals(actualCourse, course1);
     }
 
@@ -95,7 +95,7 @@ class StudentTest {
     void getModule() {
         instance.addModule(module1);
         instance.addModule(module2);
-        Modules actualmModule = instance.getModule(1);
+        Modules actualmModule = instance.getModule(0);
         assertEquals(actualmModule, module1);
     }
 

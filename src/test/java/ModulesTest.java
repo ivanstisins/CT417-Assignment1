@@ -39,7 +39,7 @@ class ModulesTest {
     void getStudent() {
         instance.addStudent(student1);
         instance.addStudent(student2);
-        Student actualStudent = instance.getStudent(1);
+        Student actualStudent = instance.getStudent(0);
         assertEquals(actualStudent, student1);
     }
 
@@ -65,7 +65,7 @@ class ModulesTest {
     void getCourse() {
         instance.addCourse(course1);
         instance.addCourse(course2);
-        Course actualCourse = instance.getCourse(1);
+        Course actualCourse = instance.getCourse(0);
         assertEquals(actualCourse, course1);
     }
 

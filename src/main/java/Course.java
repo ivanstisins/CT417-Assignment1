@@ -45,10 +45,9 @@ public class Course {
     }
 
     public Student getStudent(int index) {
-        for(index =0; index< students.size(); index++) {
+
             return students.get(index);
-        }
-        return null;
+
     }
 
     public ArrayList<Student> getStudents() {
@@ -60,10 +59,8 @@ public class Course {
     }
 
     public Modules getModule(int index) {
-        for(index =0; index< modules.size(); index++) {
-            return modules.get(index);
-        }
-        return null;
+        return modules.get(index);
+
     }
 
     public ArrayList<Modules> getModules() {

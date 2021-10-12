@@ -32,10 +32,7 @@ public class Modules {
     }
 
     public Student getStudent(int index) {
-        for(index =0; index< students.size(); index++) {
-            return students.get(index);
-        }
-        return null;
+        return students.get(index);
     }
 
     public ArrayList<Student> getStudents() {
@@ -47,10 +44,7 @@ public class Modules {
     }
 
     public Course getCourse(int index) {
-        for(index =0; index< courses.size(); index++) {
-            return courses.get(index);
-        }
-        return null;
+        return courses.get(index);
     }
 
     public ArrayList<Course> getCourses() {
