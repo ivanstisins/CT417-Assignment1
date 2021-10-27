@@ -1,25 +1,25 @@
-pipeline {
+pipeline{
     agent any
-    stages {
+    stages{
         stage('Clean'){
-            steps {
+            steps{
                 sh './gradlew clean'
             }
         }
         stage('Build'){
-            steps {
-            sh './gradlew build'
+            steps{
+                sh './gradlew build'
             }
         }
-        stage('Test'){
-             steps {
+        stage("Test"){
+            steps{
                 sh './gradlew test'
-              }
+            }
         }
     }
     post{
         always{
-            junit./ 'build/test-results/test/*.xml'
+            junit 'build/test-result/test/*.xml'
         }
     }
-}
+ }
