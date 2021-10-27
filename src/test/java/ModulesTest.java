@@ -32,7 +32,7 @@ class ModulesTest {
     void addStudent() {
         instance.addStudent(student1);
         instance.addStudent(student2);
-        assertEquals(instance.getStudent(1),student1);
+        assertEquals(instance.getStudent(0),student1);
     }
 
     @Test
@@ -58,7 +58,7 @@ class ModulesTest {
     void addCourse() {
         instance.addCourse(course1);
         instance.addCourse(course2);
-        assertEquals(instance.getCourse(1), course1);
+        assertEquals(instance.getCourse(0), course1);
     }
 
     @Test
